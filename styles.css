@@ -1,0 +1,278 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* NavBar Styling */
+
+nav {
+    background-color: #4CB8C4;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.logo img {
+    height: 40px;
+    margin: 0px 6rem;
+}
+
+.nav-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap; /* Added for responsiveness */
+}
+
+.nav-links li {
+    margin-right: 50px;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    position: relative;
+    text-transform: uppercase;
+}
+
+.nav-links li a:hover {
+    cursor: pointer;
+    background-color: #c47e4c;
+    padding: 10px 15px;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #00e0b3;
+    min-width: 120px;
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 10px;
+    display: block;
+    text-decoration: none;
+}
+
+.dropdown-content a:hover {
+    background-color: #555;
+}
+
+.toggle-button{display: none;}
+
+/* Media Query for Responsive Navbar */
+
+@media screen and (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        background-color: #4CB8C4;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        align-items: center;
+        padding: 0 0 0 0rem;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .toggle-button {
+        display: block;
+    }
+}
+
+
+
+
+
+/* Box Containers */
+
+
+
+.whole-container{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    
+}
+
+.boxes-container{
+    display: flex;
+    flex-direction: column;
+    margin: 60px 50px;
+    gap: 3px;
+}
+.container {
+    max-width: 900px;
+    /* margin: 30px auto; */
+    padding: 20px;
+    border: none;
+    box-shadow: 0px 0px 15px 1px #9894b9;
+   
+}
+
+.container .container-head {
+    font-weight: bold;
+}
+
+.container .container-head:hover{
+    font-weight: bold;
+    color: rgb(0, 184, 129);
+    cursor: pointer;
+}
+
+span:hover{
+    color: rgb(0, 184, 129);
+    cursor: pointer;
+}
+
+.container .container-para{
+    margin: 10px 0;
+}
+
+.inner-section {
+    display: flex;
+    align-items: center;
+}
+
+.inner-section img {
+    max-width: 50%;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.text-content {
+    flex: 1;
+}
+
+.text-content p {
+    margin: 0;
+    cursor: pointer;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #00e0b3;
+    color: #fff;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover{
+    background-color: rgb(67, 186, 146);
+    color: #000;
+}
+
+/* Responsive styles */
+
+@media (max-width: 768px) {
+    .inner-section {
+        flex-direction: column;
+    }
+
+    .inner-section img {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+.right-container {
+    display: flex;
+    flex-direction: column;
+    margin: 3rem 10rem;
+}
+
+.inner-container {
+    width: auto;
+    height: auto;
+    padding: 10px 30px;
+    margin: 10px;
+    background-color: #ffffff;
+    /* border: 1px solid #ccc; */
+    box-shadow: 0px 0px 6px 2px #9894b9;
+}
+
+
+input[type="text"]{
+    /* width: auto; */
+    font-size: 20px;
+    padding: 10px;
+}
+
+i{
+    position: absolute;
+    font-size: 24px;
+    margin: 5px 14rem;
+    cursor: pointer;
+    background-color: #00e0b3;
+    padding: 5px;
+    color: #fff;
+    border-radius: 10px;
+}
+
+.inner-container h2{
+    font-weight: 700;
+    color: #00e0b3;
+    font-size: 16px;
+    margin: 0px;
+}
+
+.inner-container h2:hover{
+    color: rgb(0, 254, 131);
+    cursor: pointer;
+}
+
+.inner-container button{
+    width: 100%;
+    margin: 0;
+}
+
+.inner-container p{
+    color: hwb(183 0% 33%);
+    cursor: pointer;
+   
+}
+
+.inner-container .friend{
+    text-align: center;
+}
+
+
+
+footer{
+    width: 100%;
+    height: auto;
+    background-color:#4CB8C4;
+}
+
+footer p{
+    text-align: center;
+    padding: 10px 0;
+}
+
